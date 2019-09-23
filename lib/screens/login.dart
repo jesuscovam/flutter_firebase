@@ -19,7 +19,7 @@ class _LoginState extends State<Login> {
   String _errorMessage;
   
   FormMode _formMode =FormMode.LOGIN;
-  bool _isLoading = false;
+  bool _isLoading;
 
   bool _validateAndSave(){
     final form = _formKey.currentState;
@@ -78,7 +78,7 @@ class _LoginState extends State<Login> {
     } return Container(height: 0.0, width: 0.0,);
   }
 
-  Widget _showVerifyEmailSentDialog(){
+  void _showVerifyEmailSentDialog(){
     showDialog(
       context: context,
       builder: (BuildContext context){

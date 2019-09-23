@@ -117,7 +117,7 @@ class _HomeState extends State<Home> {
     });
 
     setState(() {
-      _todoList[_todoList.indexOf(oldEntry)] = Todo.fromSnapChot(event.snapshot);
+      _todoList[_todoList.indexOf(oldEntry)] = Todo.fromSnapshot(event.snapshot);
     });
   }
 
